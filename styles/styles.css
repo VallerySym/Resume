@@ -1,0 +1,268 @@
+:root {
+  --color1: #e36ca3;
+  --color2: #5aa16a;
+  --color3: #4f7eb0;
+  --color4: #f5ce5a;
+  --color5: #f4882d;
+  --color6: #7f5fb9;
+}
+
+body {
+  padding: 50px 0;
+  background-color: var(--color4);
+  ;
+}
+
+.header {
+  padding: 50px 0;
+}
+
+.header-wrapper {
+  border-radius: 20px;
+  background-color: var(--color3);
+  padding: 20px;
+}
+
+.header-wrapper:hover {
+  box-shadow: 0 0 10px 5px#2b619b;
+  transition: all 0.5s ease;
+}
+
+.header-list {
+  margin: 0 auto;
+}
+
+.header-item {
+  padding: 15px;
+  background-color: var(--color3);
+}
+
+.link {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #a1a7ad;
+}
+
+.about-me {
+  padding: 50px 25px;
+  background-color: var(--color2);
+  border-radius: 20px;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+.about-me:hover {
+  box-shadow: 0 0 10px 5px #4f8b5d;
+  transition: all 0.5s ease;
+}
+
+.name {
+  color: var(--color5);
+}
+
+.profession {
+  color: var(--color4);
+}
+
+.progects {
+  padding: 50px 25px;
+  background-color: var(--color1);
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.progects:hover {
+  box-shadow: 0 0 10px 5px #b85a85;
+  transition: all 0.5s ease;
+}
+
+.experience {
+  background-color: var(--color5);
+  border-radius: 20px;
+  padding: 50px 25px;
+  margin-bottom: 50px;
+}
+
+.experience:hover {
+  box-shadow: 0 0 10px 5px #da7a28;
+  transition: all 0.5s ease;
+}
+
+.skills {
+  background-color: var(--color6);
+  border-radius: 20px;
+  padding: 50px 25px;
+  margin-bottom: 50px;
+}
+
+.skills:hover {
+  box-shadow: 0 0 10px 5px #7659ab;
+  transition: all 0.5s ease;
+}
+
+.box {
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  background-color: var(--color4);
+  border-radius: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.box::before {
+  position: absolute;
+  content: "";
+  top: -51px;
+  left: -222px;
+  width: 700px;
+  height: 302px;
+}
+
+.skills-title {
+
+  transform: translate(0, 75px);
+}
+
+.small-box {
+  position: absolute;
+  border-radius: 10px;
+  background-color: coral;
+  padding: 10px;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.box:hover {
+  animation-name: shake;
+  animation-iteration-count: 1;
+  animation-duration: 0.5s;
+}
+
+.box:hover .small-box,
+.box:focus .small-box {
+  transition: all 1s ease;
+}
+
+.box:hover .small-box-1,
+.box:focus .small-box-1 {
+  z-index: 1;
+  top: -10%;
+  left: -62%;
+}
+
+.box:hover .small-box-2,
+.box:focus .small-box-2 {
+  z-index: 1;
+  top: 50%;
+  left: -87%;
+}
+
+.box:hover .small-box-3,
+.box:focus .small-box-3 {
+  z-index: 1;
+  top: 78%;
+  left: -64%;
+}
+
+.box:hover .small-box-4,
+.box:focus .small-box-4 {
+  z-index: 1;
+  top: -10%;
+  left: 140%;
+}
+
+.box:hover .small-box-5,
+.box:focus .small-box-5 {
+  z-index: 1;
+  top: 6%;
+  left: 218%;
+}
+
+.box:hover .small-box-6,
+.box:focus .small-box-6 {
+  z-index: 1;
+  top: 30%;
+  left: -30%;
+}
+
+.box:hover .small-box-7,
+.box:focus .small-box-7 {
+  z-index: 1;
+  top: 80%;
+  left: 155%;
+}
+
+.box:hover .small-box-8,
+.box:focus .small-box-8 {
+  z-index: 1;
+  top: 50%;
+  left: 120%;
+}
+
+.box:hover .small-box-9,
+.box:focus .small-box-9 {
+  z-index: 1;
+  top: 20%;
+  left: -110%;
+}
+
+.box:hover .small-box-10,
+.box:focus .small-box-10 {
+  z-index: 1;
+  top: 35%;
+  left: 179%;
+}
